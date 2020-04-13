@@ -20,7 +20,7 @@ resource "aws_instance" "wb" {
   }
 }
 
-resource "aws_s3_bucket" "kafkamsk" {
+/*resource "aws_s3_bucket" "kafkamsk" {
   bucket = "kafkamsk"
   acl    = "private"
 
@@ -28,8 +28,9 @@ resource "aws_s3_bucket" "kafkamsk" {
     Name        = "kafkamsk"
     Environment = "Dev"
   }
-}
+}*/
 
+/*
 resource "aws_msk_cluster" "dogramsk" {
   cluster_name           = "dogramsk"
   kafka_version          = "2.3.1"
@@ -52,7 +53,8 @@ resource "aws_msk_cluster" "dogramsk" {
     }
   }
 
-  /*logging_info {
+  */
+/*logging_info {
     broker_logs {
       s3{
         enabled = true
@@ -60,8 +62,10 @@ resource "aws_msk_cluster" "dogramsk" {
         prefix  = "logs/msk-"
       }
     }
-  }*/
+  }*//*
+
 }
+*/
 
 
 /*output "zookeeper_connect_string" {
